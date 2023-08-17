@@ -3,7 +3,7 @@
 import { getLocalStorage } from "./helper/localStorage";
 
 // buat constant untuk menyimpan url server
-const BASE_API = import.meta.env.VITE_API_URL;
+const BASE_API = "http://192.168.0.4:8085";
 // buat constant untuk menyimpan url server untuk image
 // const BASE_API_IMAGE = "http://localhost:8080/image";
 
