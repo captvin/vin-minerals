@@ -16,6 +16,6 @@ EXPOSE 3001
 
 
 COPY package.json .
-COPY vite.config.ts .
+COPY vite.config.js .
 EXPOSE 3001
 CMD ["npm", "run", "preview"]
