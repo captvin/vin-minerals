@@ -3,6 +3,7 @@ FROM node:18-alpine as BUILD_IMAGE
 WORKDIR /frontend-tambang
 
 COPY package*.json ./
+RUN npm i -g vite
 RUN npm i --silent
 COPY . ./
 RUN npm run build
