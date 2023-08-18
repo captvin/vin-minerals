@@ -1,11 +1,21 @@
-FROM node:14
+FROM node:18-alpine as BUILD_IMAGE
 
-WORKDIR /frontend-tambang
+WORKDIR /app/frontend-tambang
 
 COPY package*.json ./
 RUN npm i --silent
 COPY . ./
-RUN npm run build
+RUN npm run 
+
+FROM node:18-alpine as PRODUCTION_IMAGE
+WORKDIR /app/frontend-tambang
+
+COPY  --from=BUILD_IMAGE /app/frontend-tambang/dist /app/frontend-tambang/dist
+
 EXPOSE 3001
 
-CMD ["npm", "run", "dev"]
+
+COPY package.json .
+COPY vite.config.ts .
+EXPOSE 3001
+CMD ["npm", "run", "preview"]
