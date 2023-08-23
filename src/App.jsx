@@ -16,6 +16,7 @@ import {
   AdminUser,
   AdminKantor,
   AdminMenu,
+  AdminTambang,
   KasirDashboard,
   KasirTransaksi,
   KasirTransaksiDetail,
@@ -47,6 +48,8 @@ const router = createBrowserRouter(
           <Route path="meja" element={<AdminKantor />} />
           {/* rute menu */}
           <Route path="unit" element={<AdminMenu />} />
+          {/* rute tambang */}
+          <Route path="tambang" element={<AdminTambang />} />
         </Route>
         {/* rute untuk role kasir */}
         <Route path="/dashboard/kasir" element={<Layout />}>

@@ -89,7 +89,12 @@ export default function Sidebar() {
                   />
                   <NavItem
                     link={"/dashboard/admin/meja"}
-                    label={"Meja"}
+                    label={"Kantor"}
+                    icon={MdDining}
+                  />
+                  <NavItem
+                    link={"/dashboard/admin/tambang"}
+                    label={"Tambang"}
                     icon={MdDining}
                   />
                   <NavItem

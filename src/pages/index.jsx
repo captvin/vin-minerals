@@ -3,6 +3,7 @@ export { default as Login } from "./login";
 export { default as AdminKantor } from "./admin/kantor";
 export { default as AdminMenu } from "./admin/menu";
 export { default as AdminUser } from "./admin/user";
+export { default as AdminTambang } from "./admin/tambang";
 export { default as AdminDashboard } from "./admin/dashboard";
 export { default as KasirDashboard } from "./kasir/dashboard";
 export { default as KasirTransaksi } from "./kasir/transaksi";

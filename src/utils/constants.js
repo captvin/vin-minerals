@@ -3,7 +3,7 @@
 import { getLocalStorage } from "./helper/localStorage";
 
 // buat constant untuk menyimpan url server
-const BASE_API = "0.0.0.0:8085";
+const BASE_API = "https://tambangbe.adhealvin.online";
 // buat constant untuk menyimpan url server untuk image
 // const BASE_API_IMAGE = "http://localhost:8080/image";
 
